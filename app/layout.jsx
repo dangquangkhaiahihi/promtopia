@@ -2,6 +2,8 @@ import "@styles/global.css";
 import "@styles/section.css";
 import "@styles/d2fa83842ed0de50.css";
 import "@styles/fa856d16d7c632cd.css";
+import { domain } from "@utils/configuration";
+import Link from "next/link";
 
 const RootLayout = ({ children, meta }) => {
   return (
@@ -76,21 +78,21 @@ const RootLayout = ({ children, meta }) => {
                 name="description"
                 content="Read the latest stories about Business on Time"
             />
-            <link rel="canonical" href="https://time.com/section/business/" />
+            <link rel="canonical" href={domain} />
             <meta property="og:title" content="Business | Time" />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="Time" />
-            <meta property="og:url" content="https://time.com/section/business/" />
+            <meta property="og:url" content={domain} />
             <meta
                 property="og:description"
                 content="Read the latest stories about Business on Time"
             />
             <meta
                 name="pinterest:url"
-                content="https://time.com/section/business/"
+                content={domain}
             />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:url" content="https://time.com/section/business/" />
+            <meta name="twitter:url" content={domain} />
             <meta name="twitter:title" content="Business" />
             <meta
                 name="twitter:description"
@@ -101,9 +103,6 @@ const RootLayout = ({ children, meta }) => {
                 content="Read the latest stories about Business on Time"
             />
             <meta name="twitter:site" content="@TIME" />
-            <meta name="pinterest:media" content="http://time.com" />
-            <meta name="twitter:image" content="http://time.com" />
-            <meta property="og:image" content="http://time.com" />
             <meta property="fb:app_id" content="991230477954201" />
             <meta property="fb:pages" content="10606591490" />
         </head>
@@ -126,7 +125,7 @@ const RootLayout = ({ children, meta }) => {
                         </div>
                         </button>
                         <div className="absolute left-[50%] [transition:transform_0.3s_ease-in-out,opacity_0.2s_ease-in-out] lg:static lg:translate-x-0 translate-x-[-50%]">
-                        <a href="https://time.com/">
+                        <Link href="/">
                             <svg
                                 role="img"
                                 width={82}
@@ -142,13 +141,13 @@ const RootLayout = ({ children, meta }) => {
                                 d="M3 2.36h23.67v5.4h-.43l.05-3.46h-9.35v24.36h2.7v.8H10.4v-.8h2.5V4.3H3.45v3.46H3v-5.4zM27.8 2.36h9.3v.75h-2.65v25.56h2.64v.8h-9.3v-.8h2.7V3.1h-2.7v-.74zM45.3 2.3h1.78l8.7 20.9 8.64-20.9h1.73L71 28.66h2.44v.8h-9.6v-.8h2.47l-3-16.85-7.68 17.67h-1.8l-7.6-17.66-3.2 16.86h2.33l-.05.8h-7.07l.05-.8h2.16L45.3 2.3zM74.25 2.36h20.47l.05 5.35h-.37l-.17-3.3-13.4-.15v10.7h11.4l.27-2.5h.5c-.12 2.28-.12 4.5 0 6.76h-.5l-.27-2.58h-11.4V27.7h13.9l.04-3.68h.38v5.45h-20.9v-.76l2.7-.04V3.16l-2.7-.05v-.74z"
                             />
                             </svg>
-                        </a>
+                        </Link>
                         </div>
                     </div>
                     <div className="flex items-center">
                         <div className="absolute left-[50%] top-0 hidden h-[100%] -translate-x-1/2 items-center [transition:transform_0.3s_ease-in-out,opacity_0.2s_ease-in-out] lg:flex">
                         <a
-                            href="https://cloud.newsletters.time.com/signup?nln=worth-your-time"
+                            href="#"
                             className="whitespace-nowrap font-roboto-condensed text-17px font-extralight uppercase text-time-black antialiased hover:text-time-red flex items-center gap-1.5"
                         >
                             <svg
@@ -216,7 +215,7 @@ const RootLayout = ({ children, meta }) => {
                         </a>
                         </div>
                         <a
-                        href="https://time.com/subscribe-header-time"
+                        href="#"
                         className="rounded-3px bg-time-red px-3 py-2.5 font-roboto-condensed text-base font-bold uppercase tracking-1px text-white antialiased [transition:transform_0.3s_ease-in-out,opacity_0.2s_ease-in-out]"
                         >
                         <span className="lg:hidden">Subscribe</span>
@@ -258,11 +257,7 @@ const RootLayout = ({ children, meta }) => {
                                 />
                             </svg>
                             </div>
-                            <form
-                            name="search"
-                            action="https://time.com/search"
-                            method="GET"
-                            >
+                            <form>
                             <input
                                 type="text"
                                 placeholder="Search..."
@@ -305,7 +300,7 @@ const RootLayout = ({ children, meta }) => {
                         <ul>
                         <li>
                             <a
-                            href="https://time.com/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Home
@@ -313,7 +308,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/us/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             U.S.
@@ -321,7 +316,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/politics/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Politics
@@ -329,7 +324,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/world/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             World
@@ -337,7 +332,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/health/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Health
@@ -345,7 +340,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/climate/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Climate
@@ -353,7 +348,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/charter/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Future of Work by Charter
@@ -361,7 +356,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/business/"
+                            href={domain}
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Business
@@ -369,7 +364,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/tech/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Tech
@@ -377,7 +372,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/entertainment/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Entertainment
@@ -385,7 +380,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/ideas/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Ideas
@@ -393,7 +388,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/science/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Science
@@ -401,7 +396,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/history/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             History
@@ -409,7 +404,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/sports/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Sports
@@ -417,7 +412,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/magazine"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Magazine
@@ -425,7 +420,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/time2030"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             TIME 2030
@@ -433,7 +428,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/collection/next-generation-leaders/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Next Generation Leaders
@@ -441,7 +436,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/collection/time100-leadership-series/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             TIME100 Leadership Series
@@ -449,7 +444,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/studios/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             TIME Studios
@@ -457,7 +452,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/collection/video/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Video
@@ -465,7 +460,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/collection/time100-talks/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             TIME100 Talks
@@ -473,7 +468,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/collection/timepieces-nft/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             TIMEPieces
@@ -481,7 +476,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/vault/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             The TIME Vault
@@ -489,7 +484,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/collection/live-well/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             TIME for Health
@@ -521,7 +516,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/partners/branded-content"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Red Border: Branded Content by TIME
@@ -529,7 +524,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/coupons"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Coupons
@@ -537,7 +532,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/personal-finance/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Personal Finance by TIME Stamped
@@ -545,7 +540,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/shopping/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Shopping by TIME Stamped
@@ -560,7 +555,7 @@ const RootLayout = ({ children, meta }) => {
                         <ul>
                         <li>
                             <a
-                            href="https://time.com/newsletters/?source=time_nav"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Newsletters
@@ -568,7 +563,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/subscribe-hamburger-time"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Subscribe
@@ -576,7 +571,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://get.time.com/servlet/OrdersGateway?cds_mag_code=TIM&cds_page_id=255457&utm_%5B%E2%80%A6%5Dketing+site-reg-paid+all&utm_content=bau+gift22+na+na+na+na+na"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Give a Gift
@@ -584,7 +579,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://get.time.com/pubs/MX/TIM/TIME_Single_Issue_Store_50_Discount_Page2_Mar.jsp?cds_page_id=265727&cds_mag_code=TIM&id=1681921547077&lsid=31091125470044351&vid=1&cds_response_key=SCCGSTR04"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Shop the TIME Store
@@ -607,7 +602,7 @@ const RootLayout = ({ children, meta }) => {
                         <ul>
                         <li>
                             <a
-                            href="https://support.time.com/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             US &amp; Canada
@@ -615,7 +610,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://support.time.com/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Global Help Center
@@ -630,7 +625,7 @@ const RootLayout = ({ children, meta }) => {
                         <ul>
                         <li>
                             <a
-                            href="https://time.com/longform/join-time/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Careers
@@ -638,7 +633,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/section/press-room/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Press Room
@@ -646,7 +641,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="mailto:letters@time.com"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Contact the Editors
@@ -654,7 +649,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/mediakit"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Media Kit
@@ -662,7 +657,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://www.parsintl.com/publication/time"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Reprints and Permissions
@@ -677,7 +672,7 @@ const RootLayout = ({ children, meta }) => {
                         <ul>
                         <li>
                             <a
-                            href="https://time.com/longform/about-time/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             About Us
@@ -685,7 +680,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/privacy/privacy_policy.html"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Privacy Policy
@@ -693,7 +688,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/privacy/privacy_policy.html#_Toc26698205"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Your Privacy Rights
@@ -701,7 +696,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/privacy/privacy_terms_service.html"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Terms of Use
@@ -709,7 +704,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/modern-slavery-statement/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Modern Slavery Statement
@@ -717,7 +712,7 @@ const RootLayout = ({ children, meta }) => {
                         </li>
                         <li>
                             <a
-                            href="https://time.com/html-sitemap/"
+                            href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
                             Site Map
@@ -856,7 +851,7 @@ const RootLayout = ({ children, meta }) => {
                 <div className="logo-container margin-0-auto">
                 <a
                     className="display-inline-block"
-                    href="https://time.com/"
+                    href="#"
                     aria-label="Logo"
                 >
                     <svg
@@ -1027,38 +1022,38 @@ const RootLayout = ({ children, meta }) => {
                 <section>
                     <ul className="margin-8-top">
                     <li>
-                        <a href="https://time.com/"> Home </a>
+                        <a href="#"> Home </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/us/"> U.S. </a>
+                        <a href="#"> U.S. </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/politics/"> Politics </a>
+                        <a href="#"> Politics </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/world/"> World </a>
+                        <a href="#"> World </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/health/"> Health </a>
+                        <a href="#"> Health </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/business/"> Business </a>
+                        <a href={domain}> Business </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/tech/"> Tech </a>
+                        <a href="#"> Tech </a>
                     </li>
                     <li>
-                        <a href="https://time.com/personal-finance/">
+                        <a href="#personal-finance/">
                         Personal Finance by TIME Stamped
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/shopping/">
+                        <a href="#shopping/">
                         Shopping by TIME Stamped
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/charter/">
+                        <a href="#charter/">
                         Future of Work by Charter
                         </a>
                     </li>
@@ -1067,58 +1062,58 @@ const RootLayout = ({ children, meta }) => {
                 <section>
                     <ul className="margin-8-top">
                     <li>
-                        <a href="https://time.com/section/entertainment/">
+                        <a href="#">
                         Entertainment
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/ideas/"> Ideas </a>
+                        <a href="#"> Ideas </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/science/"> Science </a>
+                        <a href="#"> Science </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/history/"> History </a>
+                        <a href="#"> History </a>
                     </li>
                     <li>
-                        <a href="https://time.com/section/sports/"> Sports </a>
+                        <a href="#"> Sports </a>
                     </li>
                     <li>
-                        <a href="https://time.com/magazine"> Magazine </a>
+                        <a href="#magazine"> Magazine </a>
                     </li>
                     <li>
-                        <a href="https://time.com/vault/"> The TIME Vault </a>
+                        <a href="#vault/"> The TIME Vault </a>
                     </li>
                     <li>
-                        <a href="https://www.timeforkids.com/"> TIME For Kids </a>
+                        <a href="#"> TIME For Kids </a>
                     </li>
                     <li>
                         <a href="https://www.co2.com/"> TIME CO2 </a>
                     </li>
                     <li>
-                        <a href="https://time.com/coupons"> Coupons </a>
+                        <a href="#coupons"> Coupons </a>
                     </li>
                     </ul>
                 </section>
                 <section>
                     <ul className="margin-8-top">
                     <li>
-                        <a href="https://timeedge.com/login"> TIME Edge </a>
+                        <a href="#"> TIME Edge </a>
                     </li>
                     <li>
-                        <a href="https://time.com/collection/video/"> Video </a>
+                        <a href="#"> Video </a>
                     </li>
                     <li>
-                        <a href="https://time.com/time-masthead/"> Masthead </a>
+                        <a href="#"> Masthead </a>
                     </li>
                     <li>
-                        <a href="https://time.com/newsletters/?source=TD_Footer_Link">
+                        <a href="#newsletters/?source=TD_Footer_Link">
                         Newsletters
                         </a>
                     </li>
                     <li>
                         <a
-                        href="https://time.com/subscribe-footer-time"
+                        href="#subscribe-footer-time"
                         className="subx_track_952 subscribe-link"
                         data-key="qobuskf@g"
                         data-event={4}
@@ -1128,24 +1123,24 @@ const RootLayout = ({ children, meta }) => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/subscriber-benefits/">
+                        <a href="#">
                         Subscriber Benefits
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/giveagift/"> Give a Gift </a>
+                        <a href="#"> Give a Gift </a>
                     </li>
                     <li>
-                        <a href="https://timecoverstore.com/">
+                        <a href="#">
                         {" "}
                         Shop the TIME Store{" "}
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/longform/join-time/"> Careers </a>
+                        <a href="#"> Careers </a>
                     </li>
                     <li>
-                        <a href="https://time.com/modern-slavery-statement/">
+                        <a href="#">
                         Modern Slavery Statement
                         </a>
                     </li>
@@ -1154,43 +1149,43 @@ const RootLayout = ({ children, meta }) => {
                 <section>
                     <ul className="margin-8-top">
                     <li>
-                        <a href="https://time.com/section/press-room/">
+                        <a href="#">
                         {" "}
                         Press Room{" "}
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/studios/"> TIME Studios </a>
+                        <a href="#"> TIME Studios </a>
                     </li>
                     <li>
-                        <a href="https://support.time.com/">
+                        <a href="#">
                         U.S. &amp; Canada Customer Care
                         </a>
                     </li>
                     <li>
-                        <a href="https://support.time.com/"> Global Help Center </a>
+                        <a href="#"> Global Help Center </a>
                     </li>
                     <li>
-                        <a href="mailto:feedback@time.com"> Contact the Editors </a>
+                        <a href="#"> Contact the Editors </a>
                     </li>
                     <li>
-                        <a href="https://www.parsintl.com/publication/time">
+                        <a href="#">
                         Reprints and Permissions
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/html-sitemap/"> Site Map </a>
+                        <a href="#"> Site Map </a>
                     </li>
                     <li>
-                        <a href="https://time.com/mediakit/"> Media Kit </a>
+                        <a href="#"> Media Kit </a>
                     </li>
                     <li>
-                        <a href="https://time.com/partnercontent/">
+                        <a href="#">
                         Supplied Partner Content
                         </a>
                     </li>
                     <li>
-                        <a href="https://time.com/longform/about-time/"> About Us </a>
+                        <a href="#"> About Us </a>
                     </li>
                     </ul>
                 </section>
@@ -1198,15 +1193,15 @@ const RootLayout = ({ children, meta }) => {
                 <div className="footer-legal padding-16-tb text-align-center">
                 © 2024 TIME USA, LLC. All Rights Reserved. Use of this site
                 constitutes acceptance of our
-                <a href="https://time.com/privacy/privacy_terms_service.html">
+                <a href="#">
                     Terms of Service
                 </a>
                 ,
-                <a href="https://time.com/privacy/privacy_policy.html">
+                <a href="#">
                     Privacy Policy
                 </a>
                 (
-                <a href="https://time.com/privacy/privacy_policy.html#_Toc26698205">
+                <a href="#">
                     Your Privacy Rights
                 </a>
                 ) and

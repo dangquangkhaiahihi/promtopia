@@ -1,6 +1,7 @@
 "use client"
 
 import { BlogService } from "@app/api/blog-service/blog";
+import { domain } from "@utils/configuration";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 
@@ -104,7 +105,7 @@ const Business_Time_Detail = ({ params, searchParams }) => {
                 >
                   <picture className="flex max-w-full flex-col items-center">
                     <img
-                      src={`${blog_detail.image}`}
+                      src={`${domain}${blog_detail.image?.replace(/\/\//g, "/")}`}
                     />
                   </picture>
                   <figcaption className="block max-w-full bg-white px-4 pt-2 font-roboto text-[.813rem] lg:px-0">

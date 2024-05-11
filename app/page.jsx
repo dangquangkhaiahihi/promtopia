@@ -28,7 +28,7 @@ const Business_Time = () => {
         });
         console.log('res.items', res.items);
         set_list_paginate_blogs(res.items);
-        setPageCount(500);
+        setPageCount(res.pageCount);
     } catch (err) {
       console.log("ERROR", err);
         set_list_paginate_blogs([]);
@@ -136,7 +136,7 @@ const Business_Time = () => {
               <span>
                 <a
                   target="_blank"
-                  href="https://time.com/tag/the-leadership-brief/"
+                  href="#"
                 >
                   The Leadership Brief
                 </a>
@@ -248,7 +248,7 @@ const Business_Time = () => {
                               {item.title}
                             </h2>
                             <h3 className="summary">
-                              {item.summary}
+                              {item.sumary}
                             </h3>
                             <span className="byline">
                               <span>{item.author}</span>&nbsp;
@@ -264,7 +264,7 @@ const Business_Time = () => {
                   ))
                 }
               </div>
-              <div class="section-related__pages">
+              <div className="section-related__pages">
                 {renderPagination()}
                 <span onClick={() => setPageIndex(prevIndex => {
                   if (prevIndex + 1 > pageCount) return prevIndex;
@@ -319,11 +319,6 @@ const Business_Time = () => {
                               </div>
                             </div>
                             <div className="media-body article-info bucket-margin margin-24-bottom clearfix">
-                              {/* <a className="unskinned display-inline-block eyebrow-link margin-4-bottom" href="https://time.com/entertainment/">
-                                <div className="category heading-eyebrow">
-                                  Entertainment
-                                </div>
-                              </a> */}
                               <div className="headline heading-5 heading-content-small padding-4-top media-heading">
                                 <Link href={`/${item.id}/${covertToNameUsedInUrl(item.title)}`}>
                                   {item.title}
