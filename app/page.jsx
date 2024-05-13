@@ -9,8 +9,8 @@ import { domain } from "@utils/configuration";
 import dayjs from "dayjs";
 
 export const metadata = {
-  title: "Business | Time 123sad",
-  description: "Read the latest stories about Business on Time",
+  title: "Business | Breac 123sad",
+  description: "Read the latest stories about Business on BreakingNews24h",
   content: "text/html; charset=UTF-8",
 };
 

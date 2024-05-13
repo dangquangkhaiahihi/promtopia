@@ -10,7 +10,7 @@ const RootLayout = ({ children, meta }) => {
     <html lang="en">
         <head>
             <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-            <title>Business | Time</title>
+            <title>Business | BreakingNews24h</title>
 
             <link
                 rel="shortcut icon"
@@ -76,16 +76,16 @@ const RootLayout = ({ children, meta }) => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta
                 name="description"
-                content="Read the latest stories about Business on Time"
+                content="Read the latest stories about Business on BreakingNews24h"
             />
             <link rel="canonical" href={domain} />
-            <meta property="og:title" content="Business | Time" />
+            <meta property="og:title" content="Business | BreakingNews24h" />
             <meta property="og:type" content="website" />
-            <meta property="og:site_name" content="Time" />
+            <meta property="og:site_name" content="BreakingNews24h" />
             <meta property="og:url" content={domain} />
             <meta
                 property="og:description"
-                content="Read the latest stories about Business on Time"
+                content="Read the latest stories about Business on BreakingNews24h"
             />
             <meta
                 name="pinterest:url"
@@ -96,11 +96,11 @@ const RootLayout = ({ children, meta }) => {
             <meta name="twitter:title" content="Business" />
             <meta
                 name="twitter:description"
-                content="Read the latest stories about Business on Time"
+                content="Read the latest stories about Business on BreakingNews24h"
             />
             <meta
                 name="pinterest:description"
-                content="Read the latest stories about Business on Time"
+                content="Read the latest stories about Business on BreakingNews24h"
             />
             <meta name="twitter:site" content="@TIME" />
             <meta property="fb:app_id" content="991230477954201" />
@@ -280,7 +280,7 @@ const RootLayout = ({ children, meta }) => {
                             href="#"
                             className="block py-1 font-roboto text-sm font-light leading-7 text-time-gray-1 hover:text-time-red"
                             >
-                            TIME 2030
+                            BreakingNews24h 2030
                             </a>
                         </li>
                         <li>
@@ -883,37 +883,10 @@ const RootLayout = ({ children, meta }) => {
                         <a href="#"> Home </a>
                     </li>
                     <li>
-                        <a href="#"> U.S. </a>
-                    </li>
-                    <li>
                         <a href="#"> Politics </a>
                     </li>
                     <li>
-                        <a href="#"> World </a>
-                    </li>
-                    <li>
-                        <a href="#"> Health </a>
-                    </li>
-                    <li>
                         <a href={domain}> Business </a>
-                    </li>
-                    <li>
-                        <a href="#"> Tech </a>
-                    </li>
-                    <li>
-                        <a href="#personal-finance/">
-                        Personal Finance by TIME Stamped
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#shopping/">
-                        Shopping by TIME Stamped
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#charter/">
-                        Future of Work by Charter
-                        </a>
                     </li>
                     </ul>
                 </section>
@@ -933,24 +906,6 @@ const RootLayout = ({ children, meta }) => {
                     <li>
                         <a href="#"> History </a>
                     </li>
-                    <li>
-                        <a href="#"> Sports </a>
-                    </li>
-                    <li>
-                        <a href="#magazine"> Magazine </a>
-                    </li>
-                    <li>
-                        <a href="#vault/"> The TIME Vault </a>
-                    </li>
-                    <li>
-                        <a href="#"> TIME For Kids </a>
-                    </li>
-                    <li>
-                        <a href="https://www.co2.com/"> TIME CO2 </a>
-                    </li>
-                    <li>
-                        <a href="#coupons"> Coupons </a>
-                    </li>
                     </ul>
                 </section>
                 <section>
@@ -965,91 +920,13 @@ const RootLayout = ({ children, meta }) => {
                         <a href="#"> Masthead </a>
                     </li>
                     <li>
-                        <a href="#newsletters/?source=TD_Footer_Link">
-                        Newsletters
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                        href="#subscribe-footer-time"
-                        className="subx_track_952 subscribe-link"
-                        data-key="qobuskf@g"
-                        data-event={4}
-                        data-location="footer"
-                        >
-                        Subscribe
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        Subscriber Benefits
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"> Give a Gift </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        {" "}
-                        Shop the TIME Store{" "}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"> Careers </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        Modern Slavery Statement
-                        </a>
-                    </li>
-                    </ul>
-                </section>
-                <section>
-                    <ul className="margin-8-top">
-                    <li>
-                        <a href="#">
-                        {" "}
-                        Press Room{" "}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"> TIME Studios </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        U.S. &amp; Canada Customer Care
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"> Global Help Center </a>
-                    </li>
-                    <li>
-                        <a href="#"> Contact the Editors </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        Reprints and Permissions
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"> Site Map </a>
-                    </li>
-                    <li>
-                        <a href="#"> Media Kit </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        Supplied Partner Content
-                        </a>
-                    </li>
-                    <li>
                         <a href="#"> About Us </a>
                     </li>
                     </ul>
                 </section>
                 </nav>
                 <div className="footer-legal padding-16-tb text-align-center">
-                © 2024 TIME USA, LLC. All Rights Reserved. Use of this site
+                © 2024 BREAKING NEWS 24H, LLC. All Rights Reserved. Use of this site
                 constitutes acceptance of our
                 <a href="#">
                     Terms of Service

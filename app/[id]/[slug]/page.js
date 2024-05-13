@@ -16,7 +16,7 @@ export async function generateMetadata(
   const blog = await BlogService.GetDetail(id)
  
   return {
-    title: `${blog.title} | Time`,
+    title: `${blog.title} | BreakingNews24h`,
     description: blog.sumary,
     content: "text/html; charset=UTF-8",
   }
